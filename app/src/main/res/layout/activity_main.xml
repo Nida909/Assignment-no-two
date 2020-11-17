@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="9dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+       android:src="@drawable/logr"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/im"
+        ></ImageView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im"
+        android:id="@+id/edt"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your Email Address"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt"
+        android:id="@+id/etd"
+        android:inputType="textPassword"
+        android:hint="Enter your Password "
+        ></EditText>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SingIn"
+        android:layout_below="@id/etd"
+        android:id="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:onClick="onpclck"
+        ></Button>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="20dp"
+        android:text=" "
+        android:textSize="18dp"
+       android:visibility="invisible"
+        ></TextView>
+
+</RelativeLayout>
